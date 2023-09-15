@@ -21,20 +21,4 @@ function saudacaoComIfElse(int $hora): string
   }
 }
 
-function saudacaoComSwitch(int $hora): string
-{
-  switch ($hora) {
-    case $hora > 6 && $hora < 12:
-      return "Bom Dia!!";
-    case $hora > 12 && $hora < 18:
-      return "Boa Tarde!!";
-    case $hora > 18:
-      return "Boa Noite!!";
-    default:
-      return "Boa Madrugada!!";
-  }
-}
-
 echo saudacaoComIfElse($hora);
-echo "<hr/>";
-echo saudacaoComSwitch($hora);

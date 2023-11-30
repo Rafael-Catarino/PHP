@@ -64,7 +64,7 @@ class Lutador
     $this->setEmpates($this->getEmpates() + 1);
   }
 
-  private function getNome()
+  public function getNome()
   {
     return $this->nome;
   }
@@ -115,7 +115,7 @@ class Lutador
     $this->setCategoria();
   }
 
-  private function getCategoria()
+  public function getCategoria()
   {
     return $this->categoria;
   }

@@ -10,6 +10,7 @@
 <body>
   <?php
   require_once "Lutador.php";
+  require_once "Luta.php";
   $l = array();
   $l[0] = new Lutador("Pretty Boy", "França", 31, 1.75, 68.9, 11, 3, 1);
 
@@ -23,8 +24,9 @@
 
   $l[5] = new Lutador("Nerdaart", "EUA", 30, 1.81, 105.7, 12, 2, 4);
 
-  $l[3]->perderLuta();
-  $l[3]->apresentar();
+  $UEC01 = new Luta();
+  $UEC01->marcarLuta($l[1], $l[1]);
+  $UEC01->lutar();
   ?>
 </body>
 
